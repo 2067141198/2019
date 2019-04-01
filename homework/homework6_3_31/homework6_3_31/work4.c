@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-init(int arr[], int x)
+void init(int arr[], int x)
 {
 	int i = 0;
 	for (i = 0; i < x; i++)
@@ -10,13 +10,24 @@ init(int arr[], int x)
 		arr[i] = 0;
 	}
 }
-empty(int arr[])
+void empty(int arr[], int x)
 {
-
+	int i = 0;
+	for (i = 0; i < x; i++)
+	{
+		arr[i] = 0;
+	}
 }
-reverse(int arr[])
+void reverse(int arr[], int x)
 {
-
+	int i = 0;
+	int tmp = 0;
+	for (i = 0; i < x / 2; i++)
+	{
+		tmp = arr[i];
+		arr[i] = arr[x - 1 - i];
+		arr[x - 1 - i] = tmp;
+	}
 }
 int main()
 {
@@ -28,8 +39,16 @@ int main()
 	{
 		printf("%d ", arr[i]);
 	}
-	empty(arr);
-	reverse(arr);
+	empty(arr , sz);
+	for (i = 0; i < sz; i++)
+	{
+		printf("%d ", arr[i]);
+	}
+	reverse(arr, sz);
+	for (i = 0; i < sz; i++)
+	{
+		printf("%d ", arr[i]);
+	}
 	system("pause");
 	return 0;
 }
