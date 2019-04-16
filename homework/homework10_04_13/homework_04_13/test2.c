@@ -7,15 +7,16 @@
 
 void print(int x){
 	int arr[34] = { 0 };
-	for (int i = 0; i < 31; i++, x /= 2){
+	int i = 0;
+	for (i = 31; i >= 0; i--, x /= 2){
 		arr[i] = x % 2;
 	}
-	putchar(arr[34]);
+	printf("%d",arr[i]);
 }
 
 
 
-int main(){
+int main2(){
 	int num = 0;
 	scanf("%d", &num);
 	print(num);
