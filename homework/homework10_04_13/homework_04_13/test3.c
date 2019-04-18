@@ -19,11 +19,11 @@ void print_ind2(int x){
 	putchar('\n');
 }
 
-int main(){
+int main3(){
 	int num = 0;
 	scanf("%d", &num);
 	print_ind(num);
-
+	printf("\n");
 	print_ind2(num);
 	system("pause");
 	return 0;
