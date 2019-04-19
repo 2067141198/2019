@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+//获取一个数二进制序列中所有的偶数位和奇数位，分别输出二进制序列。
 
 //方法一： 最基础的数位遍历
 void print(int x){
@@ -57,7 +57,7 @@ void print3(int x){
 	}
 }
 
-int main(){
+int main2(){
 	int num = 0;
 	scanf("%d", &num);
 	print(num);

@@ -1,8 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
 
-int main(){
+int main2(){
 
-	system("pause");
+	//system("pause");
 	return 0;
 }

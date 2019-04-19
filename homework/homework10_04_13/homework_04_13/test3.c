@@ -11,20 +11,21 @@ void print_ind(int x){
 	printf("%d ", x % 10);
 }
 
-void print_ind2(int x){
-	for (int i = x; i; i /= 10){
-		int count = i % 10;
-		printf("%d ", count);
-	}
-	putchar('\n');
-}
+//void print_ind2(int x){
+//	char arr[6] = { 0 };
+//	for (int i = 0; i < 6 ;i++, x /= 10){
+//		arr[i] = x % 10 + '0';
+//		putchar(arr[i]);
+//		putchar(' ');
+//	}
+//}
 
-int main3(){
+int main(){
 	int num = 0;
 	scanf("%d", &num);
 	print_ind(num);
 	printf("\n");
-	print_ind2(num);
+	//print_ind2(num);
 	system("pause");
 	return 0;
 }
