@@ -13,7 +13,8 @@
 //	i am a student
 
 int main(){
-	int arr[] = 'I am a student'
+	char ch = 'I am a student ';
+
 
 	system("pause");
 	return 0;
