@@ -29,7 +29,7 @@ unsigned int reverse_bit2(unsigned int value){
 	return sum;
 }
 
-int main(){
+int main1(){
 	unsigned int num = 0;
 	scanf("%d", &num);
 	unsigned int ret = reverse_bit(num);
