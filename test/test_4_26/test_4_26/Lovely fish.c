@@ -19,12 +19,13 @@ int main(){
 	int n = 0;
 	int i = 0;
 	
-	int num[] = { 0 };
-	int num2[]={ 0 };
+	int num[ ] = { 0 };
+	int num2[ ]={ 0 };
 	scanf("%d", &n);
 	int j = n;
-	while (j-- > 0){
-		scanf("%d", num);
+	for (j = 0; j < n; j++){
+
+		scanf("%d", &num[j]);
 	}
 	for (i = 0; i < n; i++){
 		int count = 0;
