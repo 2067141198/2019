@@ -8,7 +8,6 @@ int main(){
 	while (n / k){
 		int tmp = n / k + n % k;
 
-
 	}
 	
 	
