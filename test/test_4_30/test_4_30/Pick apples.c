@@ -7,8 +7,7 @@ int main(){
 	scanf("%d%d", &n, &k);	
 	while (n / k){
 		int tmp = n / k + n % k;
- 
-	}
+  	}
 	
 	
 
